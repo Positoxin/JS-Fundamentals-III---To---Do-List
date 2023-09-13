@@ -1,3 +1,23 @@
 li.completed {
     text-decoration: line-through;
-  }
+    color: black;
+}
+
+li {
+  font-weight: bold;
+  margin: 20px;
+}
+
+body {
+    color:  #EEA47FFF;
+    background-color: #00539CFF;
+}
+
+.box ul li:hover  {
+  margin-left: 10px;
+  z-index: 5;
+  background-color: #EEA47FFF;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  color: #00539CFF;
+  opacity: 1;
+}

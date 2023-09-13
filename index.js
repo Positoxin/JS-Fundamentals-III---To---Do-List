@@ -13,4 +13,6 @@ document.addEventListener('click', (event) => {
 document.addEventListener('dblclick', (event) => {
     event.target.remove();
 })
+
+document
 //document.getElementByID('').style = "text-decoration: line-through;"
