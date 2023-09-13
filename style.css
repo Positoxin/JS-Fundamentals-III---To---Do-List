@@ -1,16 +1,82 @@
 li.completed {
     text-decoration: line-through;
-    color: black;
+    color: rgb(156, 154, 154);
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+
+/* Style the header */
+.header {
+  background-color: #369ef4;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 20%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+.box p {
+  text-align: center;
+
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 li {
   font-weight: bold;
   margin: 20px;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+li:nth-child(odd) {
+  background: #dfd3ada6;
 }
 
 body {
-    color:  #EEA47FFF;
-    background-color: #00539CFF;
+    color:  rgb(0, 0, 0);
+    background-color: rgba(40, 51, 71, 0.726);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .box ul li:hover  {
@@ -20,4 +86,17 @@ body {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
   color: #00539CFF;
   opacity: 1;
+}
+
+/* Add a "checked" mark when clicked on */
+li.completed::before {
+  content: '';
+  position: absolute;
+  border-color: #111111;
+  border-style: solid;
+  border-width: 0 2px 2px 0; 
+  left: 45px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
 }

@@ -8,8 +8,10 @@ document.querySelector("button").addEventListener('click', () => {
     theList.appendChild(tasking);
 });
 document.addEventListener('click', (event) => {
-    event.target.classList.add("completed");
+    event.target.classList.add("completed");    
 });
+
+
 document.addEventListener('dblclick', (event) => {
     event.target.remove();
 })
